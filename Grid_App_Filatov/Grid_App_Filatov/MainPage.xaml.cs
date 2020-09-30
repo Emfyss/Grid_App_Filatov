@@ -28,33 +28,33 @@ namespace Grid_App_Filatov
             Grid grid = new Grid();
             for (int g = 0; g < 3; g++)
             {
-                BackgroundColor = Color.LightGray;
+                BackgroundColor = Color.Gray;
                 grid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
             }
             for (int f = 0; f < 3; f++)
             {
                 grid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
             }
-            randomPlayer = new Button
+            randomPlayer = new Button //При нажатии кнопки "Кто первый?", рандомным образом определяет, кто первый начнет!
             {
-                BackgroundColor = Color.FromRgb(0, 149, 248),
+                BackgroundColor = Color.FromRgb(0, 149, 248), 
                 BorderWidth = 2,
-                BorderColor = Color.Gray,
+                BorderColor = Color.White,
                 Text = "Кто первый?"
             };
-            randomPlayer.Clicked += randomPlayer_Clicked;
-            newGame = new Button
+            randomPlayer.Clicked += randomPlayer_Clicked; 
+            newGame = new Button //При нажатии кнопки "Новая игра", все обнуляется и начинается новая игра!
             {
-                BackgroundColor = Color.FromRgb(0, 149, 248),
+                BackgroundColor = Color.FromRgb(0, 149, 248), 
                 BorderWidth = 2,
-                BorderColor = Color.Gray,
+                BorderColor = Color.White,
                 Text = "Новая игра"
             };
             newGame.Clicked += newGame_Clicked;
             info = new Label
             {
                 FontSize = 30,
-                TextColor = Color.Gray,
+                TextColor = Color.White,
                 Text = ""
             };
 
@@ -68,7 +68,7 @@ namespace Grid_App_Filatov
                         FontSize = 120,
                         Text = "",
                         HorizontalTextAlignment = TextAlignment.Center,
-                        TextColor = Color.Gray,
+                        TextColor = Color.White,
                         VerticalTextAlignment = TextAlignment.Center,
                     };
                     tictactoe[i, j] = stat;
