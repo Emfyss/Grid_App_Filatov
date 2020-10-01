@@ -35,7 +35,7 @@ namespace Grid_App_Filatov
             {
                 grid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
             }
-            randomPlayer = new Button //При нажатии кнопки "Кто первый?", рандомным образом определяет, кто первый начнет!
+            randomPlayer = new Button //При нажатии кнопки "Кто первый?", рандомным образом определяет, кто первый начнет!!
             {
                 BackgroundColor = Color.FromRgb(0, 149, 248), 
                 BorderWidth = 2,
@@ -43,7 +43,7 @@ namespace Grid_App_Filatov
                 Text = "Кто первый?"
             };
             randomPlayer.Clicked += randomPlayer_Clicked; 
-            newGame = new Button //При нажатии кнопки "Новая игра", все обнуляется и начинается новая игра!
+            newGame = new Button //При нажатии кнопки "Новая игра", все обнуляется и начинается новая игра!!
             {
                 BackgroundColor = Color.FromRgb(0, 149, 248), 
                 BorderWidth = 2,
