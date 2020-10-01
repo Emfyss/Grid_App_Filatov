@@ -68,7 +68,7 @@ namespace Grid_App_Filatov
                         FontSize = 120,
                         Text = "",
                         HorizontalTextAlignment = TextAlignment.Center,
-                        TextColor = Color.FromRgb(0, 149, 248),
+                        TextColor = Color.White,
                         VerticalTextAlignment = TextAlignment.Center,
                     };
                     tictactoe[i, j] = stat;
