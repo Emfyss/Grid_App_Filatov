@@ -28,7 +28,7 @@ namespace Grid_App_Filatov
             Grid grid = new Grid();
             for (int g = 0; g < 3; g++)
             {
-                BackgroundColor = Color.Gray;
+                BackgroundColor = Color.White;
                 grid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
             }
             for (int f = 0; f < 3; f++)
@@ -39,7 +39,7 @@ namespace Grid_App_Filatov
             {
                 BackgroundColor = Color.FromRgb(0, 149, 248), 
                 BorderWidth = 2,
-                BorderColor = Color.White,
+                BorderColor = Color.FromRgb(0, 149, 248),
                 Text = "Кто первый?"
             };
             randomPlayer.Clicked += randomPlayer_Clicked; 
@@ -47,7 +47,7 @@ namespace Grid_App_Filatov
             {
                 BackgroundColor = Color.FromRgb(0, 149, 248), 
                 BorderWidth = 2,
-                BorderColor = Color.White,
+                BorderColor = Color.FromRgb(0, 149, 248),
                 Text = "Новая игра"
             };
             newGame.Clicked += newGame_Clicked;
@@ -64,11 +64,11 @@ namespace Grid_App_Filatov
                 {
                     stat = new Label
                     {
-                        BackgroundColor = Color.White,
+                        BackgroundColor = Color.FromRgb(0, 149, 248),
                         FontSize = 120,
                         Text = "",
                         HorizontalTextAlignment = TextAlignment.Center,
-                        TextColor = Color.White,
+                        TextColor = Color.FromRgb(0, 149, 248),
                         VerticalTextAlignment = TextAlignment.Center,
                     };
                     tictactoe[i, j] = stat;
